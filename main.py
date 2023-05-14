@@ -79,6 +79,7 @@ def high_tab(message):
         bot.send_message(message.chat.id, 'Верхняя граница определена : {} руб'.format(high_bracket))
     except Exception as e:
         bot.send_message(message.chat.id, "Что-то пошло не так..")
+        
 def time_interval(message):
     time = message.text
     global interval
